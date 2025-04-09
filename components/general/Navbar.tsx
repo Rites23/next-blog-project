@@ -1,9 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import SignIn from "./sign-in";
+import SignIn from "./sign-in"
 import { SignOut } from "./signout-button";
 import { auth } from "@/auth";
-
 
 const Navbar = async () => {
   const session = await auth();
