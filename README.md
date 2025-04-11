@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Next Blog Project 🚀
+A modern blog platform built with Next.js, Prisma, and GitHub OAuth. Hosted on Vercel for seamless deployment!
 
-## Getting Started
+## ✨ Live Demo
+Check out the live demo:
+https://next-blog-project-lilac.vercel.app
 
-First, run the development server:
+## Features
+🧑‍💻 GitHub OAuth Authentication
 
-```bash
+🖥️ Responsive Navbar
+
+📖 Dashboard for managing posts
+
+🧩 BlogCard component for displaying articles
+
+🔄 Loading States for better UX
+
+🚀 Vercel Hosting
+
+## Tech Stack
+Next.js
+
+Prisma (Database ORM)
+
+GitHub OAuth
+
+Vercel (Hosting)
+
+## Setup
+- Clone the repo:
+git clone https://github.com/your-username/next-blog-project.git
+
+- Install dependencies:
+npm install
+
+- Set up environment variables (.env):
+
+     → DATABASE_URL
+
+     → AUTH_GITHUB_ID, AUTH_GITHUB_SECRET
+
+     → AUTH_SECRET
+
+- Run locally:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Deploy on Vercel for the live version! 🎉
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Components Overview
+- Navbar: Fully responsive navigation bar for easy access to pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Prisma: Used for handling database interactions seamlessly.
 
-## Learn More
+- GitHub OAuth: Authentication powered by GitHub for easy user logins.
 
-To learn more about Next.js, take a look at the following resources:
+- Dashboard: Manage and create blog posts in a user-friendly admin panel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- BlogCard: A neat, organized display of blog posts with metadata.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Loading States: Smooth transitions and loading indicators for better UX.
 
-## Deploy on Vercel
+- MIT License - see [MIT License](./LICENSE)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Copyright (c) [2025] [Ritesh Balu]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
