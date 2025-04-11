@@ -5,8 +5,7 @@ import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 export const handleSubmission = async (formData: FormData) => {
   const session = await auth();
-  if (!session?.user) return null;
-  console.log(session.user.id);
+  if (!session?.user) return;
   const title = formData.get("title");
   const content = formData.get("content");
   const url = formData.get("url");

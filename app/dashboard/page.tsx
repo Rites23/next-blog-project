@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
-import { prisma } from "@/prisma/prisma";
-import { notFound, redirect } from "next/navigation";
-import { auth } from "@/auth";
+import { prisma } from "@/prisma/prisma"; // Import the Prisma Client instance
+import { notFound } from "next/navigation";
+
 import BlogPostCard from "@/components/general/BlogPostCard";
+
+// The return type should be inferred, or you can use `any` if necessary
 async function getData() {
   const data = await prisma.blogPost.findMany({
     select: {
@@ -12,15 +14,17 @@ async function getData() {
       title: true,
       content: true,
       imageUrl: true,
-      authorImage: true,
+      authorId: true,
       authorName: true,
+      authorImage: true,
       createdAt: true,
-      updateAt: true,
+      updatedAt: true,
     },
   });
   if (!data) return notFound();
   return data;
 }
+
 const Dashboard = async () => {
   const data = await getData();
   return (

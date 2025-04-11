@@ -888,7 +888,7 @@ export namespace Prisma {
     authorName: string | null
     authorImage: string | null
     createdAt: Date | null
-    updateAt: Date | null
+    updatedAt: Date | null
   }
 
   export type BlogPostMaxAggregateOutputType = {
@@ -900,7 +900,7 @@ export namespace Prisma {
     authorName: string | null
     authorImage: string | null
     createdAt: Date | null
-    updateAt: Date | null
+    updatedAt: Date | null
   }
 
   export type BlogPostCountAggregateOutputType = {
@@ -912,7 +912,7 @@ export namespace Prisma {
     authorName: number
     authorImage: number
     createdAt: number
-    updateAt: number
+    updatedAt: number
     _all: number
   }
 
@@ -926,7 +926,7 @@ export namespace Prisma {
     authorName?: true
     authorImage?: true
     createdAt?: true
-    updateAt?: true
+    updatedAt?: true
   }
 
   export type BlogPostMaxAggregateInputType = {
@@ -938,7 +938,7 @@ export namespace Prisma {
     authorName?: true
     authorImage?: true
     createdAt?: true
-    updateAt?: true
+    updatedAt?: true
   }
 
   export type BlogPostCountAggregateInputType = {
@@ -950,7 +950,7 @@ export namespace Prisma {
     authorName?: true
     authorImage?: true
     createdAt?: true
-    updateAt?: true
+    updatedAt?: true
     _all?: true
   }
 
@@ -1035,7 +1035,7 @@ export namespace Prisma {
     authorName: string
     authorImage: string
     createdAt: Date
-    updateAt: Date
+    updatedAt: Date
     _count: BlogPostCountAggregateOutputType | null
     _min: BlogPostMinAggregateOutputType | null
     _max: BlogPostMaxAggregateOutputType | null
@@ -1064,7 +1064,7 @@ export namespace Prisma {
     authorName?: boolean
     authorImage?: boolean
     createdAt?: boolean
-    updateAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["blogPost"]>
 
   export type BlogPostSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -1076,7 +1076,7 @@ export namespace Prisma {
     authorName?: boolean
     authorImage?: boolean
     createdAt?: boolean
-    updateAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["blogPost"]>
 
   export type BlogPostSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -1088,7 +1088,7 @@ export namespace Prisma {
     authorName?: boolean
     authorImage?: boolean
     createdAt?: boolean
-    updateAt?: boolean
+    updatedAt?: boolean
   }, ExtArgs["result"]["blogPost"]>
 
   export type BlogPostSelectScalar = {
@@ -1100,10 +1100,10 @@ export namespace Prisma {
     authorName?: boolean
     authorImage?: boolean
     createdAt?: boolean
-    updateAt?: boolean
+    updatedAt?: boolean
   }
 
-  export type BlogPostOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "content" | "imageUrl" | "authorId" | "authorName" | "authorImage" | "createdAt" | "updateAt", ExtArgs["result"]["blogPost"]>
+  export type BlogPostOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "content" | "imageUrl" | "authorId" | "authorName" | "authorImage" | "createdAt" | "updatedAt", ExtArgs["result"]["blogPost"]>
 
   export type $BlogPostPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "BlogPost"
@@ -1117,7 +1117,7 @@ export namespace Prisma {
       authorName: string
       authorImage: string
       createdAt: Date
-      updateAt: Date
+      updatedAt: Date
     }, ExtArgs["result"]["blogPost"]>
     composites: {}
   }
@@ -1549,7 +1549,7 @@ export namespace Prisma {
     readonly authorName: FieldRef<"BlogPost", 'String'>
     readonly authorImage: FieldRef<"BlogPost", 'String'>
     readonly createdAt: FieldRef<"BlogPost", 'DateTime'>
-    readonly updateAt: FieldRef<"BlogPost", 'DateTime'>
+    readonly updatedAt: FieldRef<"BlogPost", 'DateTime'>
   }
     
 
@@ -1939,7 +1939,7 @@ export namespace Prisma {
     authorName: 'authorName',
     authorImage: 'authorImage',
     createdAt: 'createdAt',
-    updateAt: 'updateAt'
+    updatedAt: 'updatedAt'
   };
 
   export type BlogPostScalarFieldEnum = (typeof BlogPostScalarFieldEnum)[keyof typeof BlogPostScalarFieldEnum]
@@ -2023,7 +2023,7 @@ export namespace Prisma {
     authorName?: StringFilter<"BlogPost"> | string
     authorImage?: StringFilter<"BlogPost"> | string
     createdAt?: DateTimeFilter<"BlogPost"> | Date | string
-    updateAt?: DateTimeFilter<"BlogPost"> | Date | string
+    updatedAt?: DateTimeFilter<"BlogPost"> | Date | string
   }
 
   export type BlogPostOrderByWithRelationInput = {
@@ -2035,7 +2035,7 @@ export namespace Prisma {
     authorName?: SortOrder
     authorImage?: SortOrder
     createdAt?: SortOrder
-    updateAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type BlogPostWhereUniqueInput = Prisma.AtLeast<{
@@ -2050,7 +2050,7 @@ export namespace Prisma {
     authorName?: StringFilter<"BlogPost"> | string
     authorImage?: StringFilter<"BlogPost"> | string
     createdAt?: DateTimeFilter<"BlogPost"> | Date | string
-    updateAt?: DateTimeFilter<"BlogPost"> | Date | string
+    updatedAt?: DateTimeFilter<"BlogPost"> | Date | string
   }, "id">
 
   export type BlogPostOrderByWithAggregationInput = {
@@ -2062,7 +2062,7 @@ export namespace Prisma {
     authorName?: SortOrder
     authorImage?: SortOrder
     createdAt?: SortOrder
-    updateAt?: SortOrder
+    updatedAt?: SortOrder
     _count?: BlogPostCountOrderByAggregateInput
     _max?: BlogPostMaxOrderByAggregateInput
     _min?: BlogPostMinOrderByAggregateInput
@@ -2080,7 +2080,7 @@ export namespace Prisma {
     authorName?: StringWithAggregatesFilter<"BlogPost"> | string
     authorImage?: StringWithAggregatesFilter<"BlogPost"> | string
     createdAt?: DateTimeWithAggregatesFilter<"BlogPost"> | Date | string
-    updateAt?: DateTimeWithAggregatesFilter<"BlogPost"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"BlogPost"> | Date | string
   }
 
   export type BlogPostCreateInput = {
@@ -2092,7 +2092,7 @@ export namespace Prisma {
     authorName: string
     authorImage: string
     createdAt?: Date | string
-    updateAt?: Date | string
+    updatedAt?: Date | string
   }
 
   export type BlogPostUncheckedCreateInput = {
@@ -2104,7 +2104,7 @@ export namespace Prisma {
     authorName: string
     authorImage: string
     createdAt?: Date | string
-    updateAt?: Date | string
+    updatedAt?: Date | string
   }
 
   export type BlogPostUpdateInput = {
@@ -2116,7 +2116,7 @@ export namespace Prisma {
     authorName?: StringFieldUpdateOperationsInput | string
     authorImage?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updateAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type BlogPostUncheckedUpdateInput = {
@@ -2128,7 +2128,7 @@ export namespace Prisma {
     authorName?: StringFieldUpdateOperationsInput | string
     authorImage?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updateAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type BlogPostCreateManyInput = {
@@ -2140,7 +2140,7 @@ export namespace Prisma {
     authorName: string
     authorImage: string
     createdAt?: Date | string
-    updateAt?: Date | string
+    updatedAt?: Date | string
   }
 
   export type BlogPostUpdateManyMutationInput = {
@@ -2152,7 +2152,7 @@ export namespace Prisma {
     authorName?: StringFieldUpdateOperationsInput | string
     authorImage?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updateAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type BlogPostUncheckedUpdateManyInput = {
@@ -2164,7 +2164,7 @@ export namespace Prisma {
     authorName?: StringFieldUpdateOperationsInput | string
     authorImage?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    updateAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type StringFilter<$PrismaModel = never> = {
@@ -2202,7 +2202,7 @@ export namespace Prisma {
     authorName?: SortOrder
     authorImage?: SortOrder
     createdAt?: SortOrder
-    updateAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type BlogPostMaxOrderByAggregateInput = {
@@ -2214,7 +2214,7 @@ export namespace Prisma {
     authorName?: SortOrder
     authorImage?: SortOrder
     createdAt?: SortOrder
-    updateAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type BlogPostMinOrderByAggregateInput = {
@@ -2226,7 +2226,7 @@ export namespace Prisma {
     authorName?: SortOrder
     authorImage?: SortOrder
     createdAt?: SortOrder
-    updateAt?: SortOrder
+    updatedAt?: SortOrder
   }
 
   export type StringWithAggregatesFilter<$PrismaModel = never> = {

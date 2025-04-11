@@ -4,10 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
-import {
-  Card,
-  CardContent
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 async function getData(id: string) {
   const data = await prisma.blogPost.findUnique({
@@ -35,7 +32,7 @@ const PostDetailsPage = async ({ params }: { params: Params }) => {
           variant: "secondary",
         })}
       >
-        Back to the Posts
+        Back to the post
       </Link>
 
       <div className="mb-8 mt-6">

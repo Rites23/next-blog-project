@@ -10,6 +10,9 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  {
+    ignores: ["lib/generated/**"], // Exclude generated files from linting
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
