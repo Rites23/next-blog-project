@@ -1,5 +1,8 @@
 ## Next Blog Project 🚀
+
 A modern blog platform built with Next.js, Prisma, and GitHub OAuth. Hosted on Vercel for seamless deployment!
+
+[![Vercel](https://vercelbadge.vercel.app/api/Rites23/next-blog-project)](https://next-blog-project-lilac.vercel.app)
 
 ## ✨ Live Demo  
 [Create your Next Blog here!](https://next-blog-project-lilac.vercel.app)
